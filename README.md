@@ -32,7 +32,7 @@ O sistema permitirá que **administradores, recepcionistas e clientes** realizem
 |-------------|------------|
 | **PHP** | Lógica de programação e integração com banco de dados |
 | **MySQL / MariaDB** | Banco de dados relacional |
-| **HTML5 / CSS3 / JavaScript** | Estrutura e estilo do front-end |
+| **HTML5 / CSS| Estrutura e estilo do front-end |
 | **Bootstrap (opcional)** | Layout e componentes responsivos |
 | **XAMPP / WAMP** | Servidor local para execução |
 | **Git & GitHub** | Controle de versão e colaboração |
