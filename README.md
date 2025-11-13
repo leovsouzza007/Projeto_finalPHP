@@ -55,7 +55,6 @@ O sistema permitirá que **administradores, recepcionistas e clientes** realizem
 │
 ├── assets/
 │ ├── css/
-│ ├── js/
 │ └── img/
 │
 ├── includes/
