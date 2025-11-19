@@ -3,14 +3,14 @@
     include_once "../config/config.inc.php";
 
     if ($_SERVER["REQUEST_METHOD"] === 'POST'){
-        $nome = $POST['nome'];
+        $nome = $_POST['nome'];
         $senha = $_POST['senha'];
         $email = $_POST['email'];
 
         $senhaHash = password_hash($senha, PASSWORD_DEFAULT);
 
         $sql = "INSERT INTO usuarios (nome, senha, email) VALUES (?, ?, ?)";
-        $stmt = $mysqli->prepare($sql);
+        $stmt = $conexao->prepare($sql);
 
         // Proteção contra SQL Injection.
         $stmt->bind_param("sss", $nome, $senhaHash, $email);
@@ -22,4 +22,4 @@
         $stmt->close();
     }
 
-?>
+?>  

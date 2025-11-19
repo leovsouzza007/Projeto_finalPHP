@@ -6,7 +6,7 @@
     <title>Formulário cadastro</title>
 </head>
 <body>
-    <form action="cadastro.php" method="post">
+    <form action="../public/cadastro.php" method="post">
         <label for="nome">Nome:</label>
         <input type="text" name="nome" id="nome" required><br>
         

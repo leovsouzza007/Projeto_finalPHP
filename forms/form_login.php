@@ -6,7 +6,7 @@
     <title>Formulário login</title>
 </head>
 <body>
-    <form action="login.php" method="post">
+    <form action="../public/login.php" method="post">
         <label for="nome">Nome:</label>
         <input type="text" name="nome" id="nome" required><br>
         
