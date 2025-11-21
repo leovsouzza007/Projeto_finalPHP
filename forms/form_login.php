@@ -7,8 +7,6 @@
 </head>
 <body>
     <form action="../public/login.php" method="post">
-        <label for="nome">Nome:</label>
-        <input type="text" name="nome" id="nome" required><br>
         
         <label for="senha">Senha:</label>
         <input type="password" name="senha" id="senha" required><br>
@@ -17,6 +15,7 @@
         <input type="email" name="email" id="email" required><br>
         
         <button type="submit">Entrar</button>
+        
     </form>
 </body>
 </html>
