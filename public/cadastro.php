@@ -14,8 +14,9 @@
 
         // Proteção contra SQL Injection.
         $stmt->bind_param("sss", $nome, $senhaHash, $email);
+
         if ($stmt->execute()){
-            echo "Cadastro realizado com sucesso!   <a href='../forms/form_login.php'>Ir para login</a>";
+            echo "Cadastro realizado com sucesso! <a href='../forms/form_login.php'>Ir para login</a>";
         } else{
             echo "Ocorreu um erro ao realizar o cadastro: " . $stmt->error();
         }
