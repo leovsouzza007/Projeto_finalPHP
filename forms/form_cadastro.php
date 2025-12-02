@@ -12,7 +12,7 @@
         <div class="w-full sm:max-w-[480px] bg-gray-900/80 backdrop-blur-sm rounded-2xl shadow-2xl shadow-indigo-500/20 border border-white/10 p-8 sm:p-10">
             
             <div class="sm:mx-auto sm:w-full sm:max-w-sm mb-10">
-                 <a href="../public/index.php" class="block text-center">
+                 <a href="../public/index.php?page=principal" class="block text-center">
                     <img class="mx-auto h-12 w-auto transition-transform hover:scale-105 duration-200" src="../assets/img/hp.svg" alt="Hotel PHP Logo">
                 </a>
                 <h2 class="mt-6 text-center text-2xl/9 font-bold tracking-tight text-white">Crie sua conta</h2>
