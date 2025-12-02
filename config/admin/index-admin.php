@@ -75,7 +75,7 @@
 
       <ul class="nav navbar-nav">
             <li class="nav-item">
-                <a class="nav-link" href="?pg=cadastrar_usuarios-admin"> cadastrar_usuarios</a>
+                <a class="nav-link" href="?pg=cadastrar_usuarios-admin"> cadastrar usuarios</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="?pg=cadastrar_quartos-admin"> cadastrar quartos</a>
@@ -102,13 +102,13 @@
     <div class="container">
 
         <?php
-        if (empty($_GET['page'])) {
+        if (empty($_GET['pg'])) {
             echo "<div class='jumbotron'>
                     <h1>Bem-vindo, Administrador!</h1>
                     <p>Selecione uma opção no menu acima para gerenciar o sistema.</p>
                   </div>";
         } else {
-            $page = basename($_GET['page']);
+            $page = basename($_GET['pg']);
             $arquivo = $page . '.php';
 
             if (file_exists($arquivo)) {
