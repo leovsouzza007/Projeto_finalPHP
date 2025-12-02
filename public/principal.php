@@ -12,7 +12,7 @@
                 <p class="mt-8 text-lg font-medium text-pretty text-gray-400 sm:text-xl/8">No Hotel PHP, unimos conforto, eficiência e atendimento de qualidade para oferecer uma
                 experiência de hospedagem simples e sofisticada.</p>
                 <div class="mt-10 flex items-center justify-center gap-x-6">
-                    <a href="../forms/form_cadastro.php" class="rounded-md bg-indigo-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-indigo-400 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500">Comece aqui</a>
+                    <a href="../forms/form_cadastro.php?page=form_cadastro" class="rounded-md bg-indigo-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-indigo-400 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500">Comece aqui</a>
                     <a href="../public/index.php?page=quartos" class="text-sm/6 font-semibold text-white">Nossas Suítes <span aria-hidden="true">→</span></a>
                 </div>
         </div>
