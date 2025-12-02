@@ -51,19 +51,22 @@
     <div class="collapse navbar-collapse">
       <ul class="nav navbar-nav">
             <li class="nav-item">
-                <a class="nav-link" href="?pg=funcionarios"> Funcionarios</a>
+                <a class="nav-link"  href="?pg=cadastrar_clientes-admin"> Cadastar clientes</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="?pg=noticias"> Noticias</a>
+                <a class="nav-link" href="?pg=cadastrar_quartos-admin"> cadastrar quartos</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link"  href="?pg=clientes-admin"> Clientes</a>
+                <a class="nav-link" href="?pg=excluir_clientes-admin">excluir cliente </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="?pg=contato"> Dados de Contato</a>
+                <a class="nav-link" href="?pg=editar_clientes-admin">editar cliente</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="?pg=clientes-form">Cadastrar-se</a>
+                <a class="nav-link" href="?pg=editar_quartos-admin">editar quartos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="?pg=excluir_quartos-admin">excluir quartos</a>
             </li>
       </ul>
     </div>
