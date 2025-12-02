@@ -73,7 +73,7 @@
 
             <?php else: ?>
 
-            <<div class="flex flex-col justify-center items-center min-h-[300px] text-center">
+            <div class="flex flex-col justify-center items-center min-h-[300px] text-center">
                 <p class="text-gray-300 text-xl font-semibold">
                     Nenhum quarto disponível no momento.
                 </p>

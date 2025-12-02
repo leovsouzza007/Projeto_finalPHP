@@ -12,7 +12,7 @@
                 </p>
             </div>
 
-            <form action="../public/enviar_contato.php" method="POST" class="space-y-6">
+            <form action="contato_sucesso.php" method="POST" class="space-y-6">
 
                 <div>
                     <label for="nome" class="block text-sm/6 font-medium text-gray-200">Nome</label>
