@@ -16,7 +16,7 @@
 
 <body class="min-h-screen flex flex-col">
   <div class="bg-gray-900">
-    <header class="absolute inset-x-0 top-0 z-50">
+    <header class="absolute inset-x-0 top-0 z-50 mb-64">
       <nav aria-label="Global" class="max-w-7xl mx-auto flex items-center justify-between p-6 lg:px-8">
         <div class="flex lg:flex-1">
           <a href="index.php?page=principal" class="-m-1.5 p-1.5">
@@ -36,8 +36,9 @@
 
         <div class="hidden lg:flex lg:gap-x-12">
           <a href="../forms/form_cadastro.php" class="text-sm/6 font-semibold text-white">Cadastre-se</a>
-          <a href="index.php?page=sobre" class="text-sm/6 font-semibold text-white">Sobre Nós</a>
-          <a href="index.php?page=companhia" class="text-sm/6 font-semibold text-white">Companhia PHP</a>
+          <a href="../public/index.php?page=contato" class="text-sm/6 font-semibold text-white">Contato</a>
+          <a href="../public/index.php?page=sobre" class="text-sm/6 font-semibold text-white">Sobre nós</a>
+          <a href="../public/index.php?page=quartos" class="text-sm/6 font-semibold text-white">Quartos</a>
         </div>
 
         <?php if (isset($_SESSION['id'])): ?>

@@ -3,24 +3,24 @@
         <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-10">
 
             <div>
-            <h3 class="text-white text-lg font-semibold mb-3">Hotel PHP</h3>
-            <p class="text-sm">O melhor conforto, atendimento e experiência para você.</p>
+                <h3 class="text-white text-lg font-semibold mb-3">Hotel PHP</h3>
+                <p class="text-sm">O melhor conforto, atendimento e experiência para você.</p>
             </div>
 
             <div>
-            <h3 class="text-white text-lg font-semibold mb-3">Links Rápidos</h3>
-            <ul class="space-y-2 text-sm">
-                <li><a href="../public/index.php" class="hover:text-white transition">Início</a></li>
-                <li><a href="#" class="hover:text-white transition">Preços</a></li>
-                <li><a href="#" class="hover:text-white transition">Reservas</a></li>
-                <li><a href="#" class="hover:text-white transition">Contato</a></li>
-            </ul>
+                <h3 class="text-white text-lg font-semibold mb-3">Links Rápidos</h3>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="../public/index.php?page=principal" class="hover:text-white transition">Home</a></li>
+                    <li><a href="../public/index.php?page=contato" class="hover:text-white transition">Contato</a></li>
+                    <li><a href="../public/index.php?page=quartos" class="hover:text-white transition">Suítes</a></li>
+                    <li><a href="../public/index.php?page=sobre" class="hover:text-white transition">Sobre nós</a></li>
+                </ul>
             </div>
 
             <div>
-            <h3 class="text-white text-lg font-semibold mb-3">Contato</h3>
-            <p class="text-sm">Email: contato@hotelp.com</p>
-            <p class="text-sm">Telefone: (83) 90000-0000</p>
+                <h3 class="text-white text-lg font-semibold mb-3">Contato</h3>
+                <p class="text-sm">Email: contato@hotelp.com</p>
+                <p class="text-sm">Telefone: (83) 90000-0000</p>
             </div>
 
         </div>
