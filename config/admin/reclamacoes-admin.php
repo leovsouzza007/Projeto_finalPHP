@@ -73,7 +73,7 @@ function e($v) {
         <table class="table table-striped table-hover">
           <thead>
             <tr>
-              <th>#</th>
+              <th>Id</th>
               <th>Nome</th>
               <th>Email</th>
               <th>Mensagem (preview)</th>
