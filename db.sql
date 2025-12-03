@@ -31,11 +31,11 @@ CREATE TABLE IF NOT EXISTS usuarios (
 -- --------------------------------------------------------
 
 -- TABELA DE FUNCIONÁRIOS
-CREATE TABLE IF NOT EXISTS usuarios (
+CREATE TABLE IF NOT EXISTS funcionarios (
     id INT AUTO_INCREMENT PRIMARY KEY,
     nome VARCHAR(70) NOT NULL,
     email VARCHAR(70) UNIQUE NOT NULL,
     senha VARCHAR(255) NOT NULL,
-    cargo ENUM('admin','funcionario') NOT NULL,
+    cargo ENUM('Recepcionista','Camareiro', 'Cozinheiro', 'Gerente geral', 'Técnico de manutenção') NOT NULL,
     criado_em TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );

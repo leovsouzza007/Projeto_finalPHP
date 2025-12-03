@@ -59,8 +59,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <label>Cargo:</label>
                 <select name="cargo" class="form-control">
                     <option value="">Selecione</option>
-                    <option value="admin">Administrador</option>
-                    <option value="funcionario">Funcionário</option>
+                    <option value="Receocionista">Recepcionista</option>
+                    <option value="Camareiro">Camareiro</option>
+                    <option value="Cozinheiro">Cozinheiro</option>
+                    <option value="Gerente geral">Gerente geral</option>
+                    <option value="Técnico de manutenção">Técnico de manutenção</option>
                 </select>
             </div>
 

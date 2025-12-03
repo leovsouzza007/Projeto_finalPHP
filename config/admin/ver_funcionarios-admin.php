@@ -41,7 +41,7 @@ $result = $conexao->query($sql);
 
                                 <p><strong>ID:</strong> <?= $dados['id']; ?></p>
                                 <p><strong>Email:</strong> <?= $dados['email']; ?></p>
-                                <p><strong>Cargo:</strong> <?= ucfirst($dados['cargo']); ?></p>
+                                <p><strong>Cargo:</strong> <?= $dados['cargo']; ?></p>
 
                                 <div class="text-right">
                                     <a href='?page=editar_form_funcionarios-admin&id=<?= $dados["id"]; ?>'
