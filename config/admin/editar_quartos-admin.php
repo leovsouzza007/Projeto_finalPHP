@@ -4,12 +4,14 @@ require_once "../config.inc.php";
 
 if($_SERVER['REQUEST_METHOD'] == 'POST') {
     $nome = $_POST["nome"];
-    $email = $_POST["email"];
+    $descricao = $_POST["descricao"];
+    $preco = $_POST["preco"];
     $id = $_POST["id"];
 
     $sql = "UPDATE quartos SET 
             nome = '$nome',
-            email = '$email',
+            descricao = '$descricao',
+            preco = '$preco'
             WHERE id = '$id'";
 
     $executa = mysqli_query($conexao, $sql);

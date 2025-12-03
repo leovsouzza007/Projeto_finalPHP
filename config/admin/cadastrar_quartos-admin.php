@@ -5,24 +5,23 @@ $mensagem = "";
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
-    $nome  = trim($_POST['nome']);
-    $email = trim($_POST['email']);
-    $senha = trim($_POST['senha']);
+    $nome       = trim($_POST['nome']);
+    $descricao  = trim($_POST['descricao']);
+    $preco      = trim($_POST['preco']);
+    $capacidade = trim($_POST['capacidade']);
 
-    if (empty($nome) || empty($email) || empty($senha)) {
+    if (empty($nome) || empty($descricao) || empty($preco) || empty($capacidade)) {
         $mensagem = "<div class='alert alert-danger'>Preencha todos os campos.</div>";
     } else {
 
-        $senha_hash = password_hash($senha, PASSWORD_DEFAULT);
-
-        $sql = "INSERT INTO quartos (nome, email, senha ) VALUES (?, ?, ? )";
+        $sql = "INSERT INTO quartos (nome, descricao, preco, capacidade) VALUES (?, ?, ?, ?)";
         $stmt = $conexao->prepare($sql);
 
-        if ($stmt->execute([$nome, $email, $senha_hash, ])) {
+        if ($stmt->execute([$nome, $descricao, $preco, $capacidade])) {
             header("Location: ?page=ver_quartos-admin&success=1");
             exit;
         } else {
-            $mensagem = "<div class='alert alert-danger'>Erro ao cadastrar quartos.</div>";
+            $mensagem = "<div class='alert alert-danger'>Erro ao cadastrar quarto.</div>";
         }
     }
 }
@@ -40,26 +39,28 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <form method="POST">
 
             <div class="form-group">
-                <label>Nome:</label>
-                <input type="text" name="nome" class="form-control" placeholder="Nome completo">
+                <label>Nome do quarto:</label>
+                <input type="text" name="nome" class="form-control" placeholder="Ex: Suíte Master">
             </div>
 
             <div class="form-group">
-                <label>E-mail:</label>
-                <input type="email" name="email" class="form-control" placeholder="email@dominio.com">
+                <label>Descrição:</label>
+                <textarea name="descricao" class="form-control" placeholder="Descrição detalhada do quarto" rows="4"></textarea>
             </div>
 
             <div class="form-group">
-                <label>Senha:</label>
-                <input type="password" name="senha" class="form-control" placeholder="mínimo 6 caracteres">
+                <label>Preço (R$):</label>
+                <input type="number" step="0.01" name="preco" class="form-control" placeholder="Ex: 199.90">
             </div>
 
             <div class="form-group">
-                <label>Cargo:</label>
-                <select name="Quarto" class="form-control">
+                <label>Capacidade (pessoas):</label>
+                <select name="capacidade" class="form-control">
                     <option value="">Selecione</option>
-                    <option value="admin">Administrador</option>
-                    <option value="quartos">Quartos</option>
+                    <option value="1">1 pessoa</option>
+                    <option value="2">2 pessoas</option>
+                    <option value="3">3 pessoas</option>
+                    <option value="4">4 pessoas</option>
                 </select>
             </div>
 

@@ -84,7 +84,7 @@
                 <a class="nav-link" href="index-admin.php?page=cadastrar_quartos-admin"> Cadastrar Quartos</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="index-admin.php?page=editar_quartos-admin"> Ver Quartos</a>
+                <a class="nav-link" href="index-admin.php?page=ver_quartos-admin"> Ver Quartos</a>
             </li>
       </ul>
 
