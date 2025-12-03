@@ -75,16 +75,16 @@
 
       <ul class="nav navbar-nav">
             <li class="nav-item">
-                <a class="nav-link" href="?page=ver_funcionarios-admin"> Ver Funcionários</a>
+                <a class="nav-link" href="index-admin.php?page=ver_funcionarios-admin"> Ver Funcionários</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="?page=cadastrar_funcionarios-admin">Cadastrar Funcionários</a>
+                <a class="nav-link" href="index-admin.php?page=cadastrar_funcionarios-admin">Cadastrar Funcionários</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="?page=cadastrar_quartos-admin"> Cadastrar Quartos</a>
+                <a class="nav-link" href="index-admin.php?page=cadastrar_quartos-admin"> Cadastrar Quartos</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="?page=editar_quartos-admin"> Ver Quartos</a>
+                <a class="nav-link" href="index-admin.php?page=editar_quartos-admin"> Ver Quartos</a>
             </li>
       </ul>
 

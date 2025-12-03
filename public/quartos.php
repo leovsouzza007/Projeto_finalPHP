@@ -2,6 +2,7 @@
 
     require_once("../config/config.inc.php");
 
+    // Faz a seleção dos quartos que tiverem a "ocupação" como "Disponível"
     $sql = "SELECT * FROM quartos WHERE status = 'Disponível'";
     $resultado = $conexao->query($sql);
 
@@ -17,6 +18,8 @@
                 Quartos Disponíveis
             </h2>
 
+            <!-- Inicialização de uma estrutura condicional if dentro do html até sua finalização -->
+            <!-- Condição de ter pelo menos 1 quarto cadastrado e disponível como consequência  -->
             <?php if ($resultado->num_rows > 0): ?>
 
             <div class="overflow-x-auto">
@@ -34,6 +37,7 @@
                     </thead>
 
                     <tbody class="divide-y divide-gray-800">
+                        <!-- Inicialização de um loop while dentro do html até a sua finalização -->
                         <?php while ($q = $resultado->fetch_assoc()): ?>
                         <tr class="hover:bg-white/5 transition">
 
@@ -66,11 +70,12 @@
                             </td>
 
                         </tr>
+                        <!-- Finalização do loop while dentro do html -->
                         <?php endwhile; ?>
                     </tbody>
                 </table>
             </div>
-
+            <!-- Caso a condição cima não seja cumprida, vai ser mostrado a mensagem abaixo -->
             <?php else: ?>
 
             <div class="flex flex-col justify-center items-center min-h-[300px] text-center">
@@ -83,7 +88,7 @@
                 </p>
             </div>
 
-
+            <!-- Finalização da estrutura condicional dentro do html -->
             <?php endif; ?>
 
         </div>

@@ -27,7 +27,7 @@
       Nossa equipe irá responder o mais breve possível.
     </p>
 
-    <a href="index.php"
+    <a href="index.php?page=principal"
        class="inline-flex items-center justify-center rounded-lg bg-indigo-600 px-6 py-2.5
               text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 
               hover:shadow-indigo-500/30 focus-visible:outline 

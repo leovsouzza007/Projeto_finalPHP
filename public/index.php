@@ -1,5 +1,6 @@
 <?php 
 
+    // Inicialização da sessão caso não esteja iniciada 
     if (session_status() == PHP_SESSION_NONE){
         session_start();
     }
