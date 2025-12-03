@@ -39,3 +39,15 @@ CREATE TABLE IF NOT EXISTS funcionarios (
     cargo ENUM('Recepcionista','Camareiro', 'Cozinheiro', 'Gerente geral', 'Técnico de manutenção') NOT NULL,
     criado_em TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
+
+-- --------------------------------------------------------
+
+-- TABELA DE RECLAMAÇÕES
+CREATE TABLE IF NOT EXISTS reclamacoes (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  nome VARCHAR(150) NOT NULL,
+  email VARCHAR(200) NOT NULL,
+  mensagem TEXT NOT NULL,
+  status ENUM('pendente','lido') NOT NULL DEFAULT 'pendente',
+  criado_em TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
