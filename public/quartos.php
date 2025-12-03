@@ -18,6 +18,13 @@
                 Quartos Disponíveis
             </h2>
 
+            <?php if (isset($_GET['reservado'])): ?>
+                <div class="bg-green-600/20 text-green-300 border border-green-600 
+                p-3 rounded-xl mb-6 text-center">
+                    Quarto reservado com sucesso!
+                </div>
+            <?php endif; ?>
+
             <!-- Inicialização de uma estrutura condicional if dentro do html até sua finalização -->
             <!-- Condição de ter pelo menos 1 quarto cadastrado e disponível como consequência  -->
             <?php if ($resultado->num_rows > 0): ?>
@@ -62,9 +69,9 @@
                             </td>
 
                             <td class="px-6 py-4">
-                                <a href="#"
+                                <a href="?page=reservar&id=<?= $q['id']; ?>"
                                 class="bg-indigo-600 hover:bg-indigo-500 text-white px-4 py-2 rounded-lg 
-                                        shadow-md hover:shadow-indigo-500/30 transition">
+                                shadow-md hover:shadow-indigo-500/30 transition">
                                     Reservar
                                 </a>
                             </td>
