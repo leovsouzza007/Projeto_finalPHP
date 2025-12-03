@@ -1,11 +1,39 @@
+<?php
+// arquivo: contato_sucesso.php
+// este arquivo recebe o POST do form e insere no DB antes de mostrar a página de sucesso
+
+require_once '../config/config.inc.php'; // mantém seu mysqli
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+
+    $nome = trim($_POST['nome'] ?? '');
+    $email = trim($_POST['email'] ?? '');
+    $mensagem = trim($_POST['mensagem'] ?? '');
+
+    if ($nome === '' || $email === '' || $mensagem === '') {
+        header('Location: contato.php');
+        exit;
+    }
+
+    // Inserção segura com mysqli
+    $sql = "INSERT INTO reclamacoes (nome, email, mensagem) VALUES (?, ?, ?)";
+    $stmt = mysqli_prepare($conexao, $sql);
+
+    mysqli_stmt_bind_param($stmt, "sss", $nome, $email, $mensagem);
+
+    mysqli_stmt_execute($stmt);
+    
+} else {
+    header('Location: contato.php');
+    exit;
+}
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
   <title>Mensagem Recebida</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- Tailwind CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
