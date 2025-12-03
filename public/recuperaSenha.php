@@ -44,7 +44,7 @@
             </form>
 
             <p class="mt-10 text-center text-sm/6 text-gray-400">
-                <a href="form_login.php" class="font-semibold text-indigo-400 hover:text-indigo-300 transition-colors">Voltar ao login</a>
+                <a href="../forms/form_login.php" class="font-semibold text-indigo-400 hover:text-indigo-300 transition-colors">Voltar ao login</a>
             </p>
         </div>
 

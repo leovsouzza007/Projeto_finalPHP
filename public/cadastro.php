@@ -5,17 +5,21 @@
     $mensagem = "";
     $tipo_mensagem = ""; // 'sucesso' ou 'erro'
 
+    // Pega o nome, senha e email do formulário de cadastro
     if ($_SERVER["REQUEST_METHOD"] === 'POST'){
         $nome = $_POST['nome'];
         $senha = $_POST['senha'];
         $email = $_POST['email'];
 
+        // Criptografia da senha
         $senhaHash = password_hash($senha, PASSWORD_DEFAULT);
 
+        // Inserção dos dados na tabela
         $sql = "INSERT INTO usuarios (nome, senha, email) VALUES (?, ?, ?)";
         $stmt = $conexao->prepare($sql);
 
         // Proteção contra SQL Injection.
+        // "sss" -> String String String -> nome senha email
         $stmt->bind_param("sss", $nome, $senhaHash, $email);
 
         if ($stmt->execute()){
@@ -47,6 +51,7 @@
                 <img class="mx-auto h-12 w-auto" src="../assets/img/hp.svg" alt="Hotel PHP Logo">
             </div>
 
+            <!-- Inicialização de estrutura condicional dentro do html -->
             <?php if ($tipo_mensagem === 'sucesso'): ?>
                 <div class="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-green-900/30 mb-6">
                     <svg class="h-8 w-8 text-green-400" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
@@ -83,6 +88,7 @@
             <?php else: ?>
                 <p class="text-gray-400 mb-6">Acesso inválido.</p>
                 <a href="../public/index.php" class="text-indigo-400 hover:text-indigo-300">Voltar para a Home</a>
+            <!-- Finalização da estrutura condicional -->
             <?php endif; ?>
 
         </div>

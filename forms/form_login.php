@@ -18,16 +18,20 @@
                 <h2 class="mt-6 text-center text-2xl/9 font-bold tracking-tight text-white">Acessar Conta</h2>
             </div>
 
+            <!-- Inicilaização da estrutura condicional dentro do html -->
             <?php if (isset($_GET['erro']) && $_GET['erro'] == 'senha'): ?>
                 <div class="mb-4 w-full text-center text-sm text-red-400 bg-red-900/20 border border-red-500/30 rounded-lg px-3 py-2">
                     Senha incorreta!
                 </div>
+            <!-- Finalização da estrutura condicional dentro do html -->
             <?php endif; ?>
 
+            <!-- Inicialização da estrutura condicional dentro do html -->
             <?php if (isset($_GET['erro']) && $_GET['erro'] == 'usuario'): ?>
                 <div class="mb-4 w-full text-center text-sm text-red-400 bg-red-900/20 border border-red-500/30 rounded-lg px-3 py-2">
                     Usuário não encontrado!
                 </div>
+                <!-- Finalização da estrutura condicional dentro do html -->
             <?php endif; ?>
 
             <div class="sm:mx-auto sm:w-full sm:max-w-sm">

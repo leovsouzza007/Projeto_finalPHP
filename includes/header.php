@@ -41,6 +41,7 @@
           <a href="../public/index.php?page=quartos" class="text-sm/6 font-semibold text-white">Quartos</a>
         </div>
 
+        <!-- Inicialização da estrutura condicional dentro do html -->
         <?php if (isset($_SESSION['id'])): ?>
           <div class="hidden lg:flex lg:flex-1 lg:justify-end items-center gap-4">
             <p class="text-sm font-medium text-white">Olá, <?php echo htmlspecialchars($_SESSION['nome'], ENT_QUOTES, 'UTF-8'); ?>!</p>
@@ -50,6 +51,7 @@
           <div class="hidden lg:flex lg:flex-1 lg:justify-end">
             <a href="../forms/form_login.php" class="text-sm/6 font-semibold text-white">Log in <span aria-hidden="true">&rarr;</span></a>
           </div>
+        <!-- Finalização da estrutura condicional dentro do html -->
         <?php endif; ?>
       </nav>
     </header>
