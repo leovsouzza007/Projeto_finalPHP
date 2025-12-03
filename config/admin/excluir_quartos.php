@@ -12,3 +12,4 @@
     }else{
         echo "<h2>Erro ao excluir registro!</h2>";
         echo "<br><a href='?page=ver_quartos-admin'>Voltar</a>";
+    }
