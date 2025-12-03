@@ -9,7 +9,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $email = trim($_POST['email']);
     $senha = trim($_POST['senha']);
 
-    if (empty($nome) || empty($email) || empty($senha) || {
+    if (empty($nome) || empty($email) || empty($senha)) {
         $mensagem = "<div class='alert alert-danger'>Preencha todos os campos.</div>";
     } else {
 
